@@ -1,4 +1,6 @@
-# para ejecutar esta aplicacion es necesario, ejecutar el servicio schedule generator primero que todo.
+Mi nombre es Sebastian Andres Sovier Moreno
+
+para ejecutar esta aplicacion es necesario, ejecutar el servicio schedule generator primero que todo.
 
 es necesario tener instalado:
 java 1.8.
