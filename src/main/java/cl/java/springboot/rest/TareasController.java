@@ -43,7 +43,6 @@ public class TareasController {
     public ResponseEntity<Object> obtenerTareas() {
         LOGGER.trace("ingresando al servicio : " + "obtenerTareas");
         try {
-            System.out.println("asdsadsa");
             ResponseEntity<Tareas[]> response
                     = restTemplate.getForEntity(
                             "http://localhost:8080/generator/schedule/tasks",
@@ -78,7 +77,7 @@ public class TareasController {
                         str.add(listaTareasFor.get(i).getTask_id());
                         listaTareasFor.remove(i);
                         listaTareasFor1 = listaTareasFor;
-                        i = 0;
+                        //  i = 0;
                         if (str.size() > 0) {
                             contadori++;
                             JornadaModels obj = new JornadaModels(contadori, str);
@@ -104,7 +103,7 @@ public class TareasController {
                             JornadaModels obj1 = new JornadaModels(contadori, str1);
                             jor1.add(obj1);
                         }
-                        i = 0;
+                        // i = 0;
                         listaTareasFor = listaTareasFor1;
                         break;
 
@@ -117,7 +116,6 @@ public class TareasController {
                                 str2.add(listaTareasFor1.get(e).getTask_id());
                                 contadorFor6 = contadorFor6 + listaTareasFor1.get(e).getDuration();
                                 listaTareasFor1.remove(e);
-                                System.out.println(listaTareasFor1);
 
                             }
                         }
@@ -127,7 +125,7 @@ public class TareasController {
                             jor1.add(obj2);
                         }
                         listaTareasFor = listaTareasFor1;
-                        i = 0;
+                        //i = 0;
                         break;
                     case 5:
                         int contadorFor5 = 0;
@@ -146,7 +144,7 @@ public class TareasController {
                             JornadaModels obj3 = new JornadaModels(contadori, str3);
                             jor1.add(obj3);
                         }
-                        i = 0;
+                        //i = 0;
                         listaTareasFor = listaTareasFor1;
                         break;
                     case 4:
@@ -166,7 +164,7 @@ public class TareasController {
                             JornadaModels obj4 = new JornadaModels(contadori, str4);
                             jor1.add(obj4);
                         }
-                        i = 0;
+                        // i = 0;
                         listaTareasFor = listaTareasFor1;
                         break;
                     case 3:
@@ -186,7 +184,7 @@ public class TareasController {
                             JornadaModels obj5 = new JornadaModels(contadori, str5);
                             jor1.add(obj5);
                         }
-                        i = 0;
+                        // i = 0;
                         listaTareasFor = listaTareasFor1;
                         break;
                     case 2:
@@ -206,7 +204,7 @@ public class TareasController {
                             JornadaModels obj6 = new JornadaModels(contadori, str6);
                             jor1.add(obj6);
                         }
-                        i = 0;
+                        //  i = 0;
                         listaTareasFor = listaTareasFor1;
                         break;
                     case 1:
@@ -227,7 +225,7 @@ public class TareasController {
                             jor1.add(obj7);
                         }
 
-                        i = 0;
+                        //  i = 0;
                         listaTareasFor = listaTareasFor1;
                         break;
                 }
