@@ -78,7 +78,6 @@ public class TareasController {
                         str.add(listaTareasFor.get(i).getTask_id());
                         listaTareasFor.remove(i);
                         listaTareasFor1 = listaTareasFor;
-
                         i = 0;
                         if (str.size() > 0) {
                             contadori++;
@@ -97,10 +96,7 @@ public class TareasController {
                                 str1.add(listaTareasFor1.get(a).getTask_id());
                                 contadorFor7 = contadorFor7 + listaTareasFor1.get(a).getDuration();
                                 listaTareasFor1.remove(a);
-                                a = 0;
-                                System.out.println(listaTareasFor1);
-                                i = 0;
-                                listaTareasFor = listaTareasFor1;
+
                             }
                         }
                         if (str1.size() > 0) {
@@ -108,7 +104,8 @@ public class TareasController {
                             JornadaModels obj1 = new JornadaModels(contadori, str1);
                             jor1.add(obj1);
                         }
-
+                        i = 0;
+                        listaTareasFor = listaTareasFor1;
                         break;
 
                     case 6:
@@ -121,9 +118,7 @@ public class TareasController {
                                 contadorFor6 = contadorFor6 + listaTareasFor1.get(e).getDuration();
                                 listaTareasFor1.remove(e);
                                 System.out.println(listaTareasFor1);
-                                e = 0;
-                                listaTareasFor = listaTareasFor1;
-                                i = 0;
+
                             }
                         }
                         if (str2.size() > 0) {
@@ -131,7 +126,8 @@ public class TareasController {
                             JornadaModels obj2 = new JornadaModels(contadori, str2);
                             jor1.add(obj2);
                         }
-
+                        listaTareasFor = listaTareasFor1;
+                        i = 0;
                         break;
                     case 5:
                         int contadorFor5 = 0;
@@ -142,9 +138,7 @@ public class TareasController {
                                 str3.add(listaTareasFor1.get(b).getTask_id());
                                 contadorFor5 = contadorFor5 + listaTareasFor1.get(b).getDuration();
                                 listaTareasFor1.remove(b);
-                                b = 0;
-                                i = 0;
-                                listaTareasFor = listaTareasFor1;
+
                             }
                         }
                         if (str3.size() > 0) {
@@ -152,7 +146,8 @@ public class TareasController {
                             JornadaModels obj3 = new JornadaModels(contadori, str3);
                             jor1.add(obj3);
                         }
-
+                        i = 0;
+                        listaTareasFor = listaTareasFor1;
                         break;
                     case 4:
                         int contadorFor4 = 0;
@@ -163,9 +158,7 @@ public class TareasController {
                                 str4.add(listaTareasFor1.get(c).getTask_id());
                                 contadorFor4 = contadorFor4 + listaTareasFor1.get(c).getDuration();
                                 listaTareasFor1.remove(c);
-                                c = 0;
-                                i = 0;
-                                listaTareasFor = listaTareasFor1;
+
                             }
                         }
                         if (str4.size() > 0) {
@@ -173,7 +166,8 @@ public class TareasController {
                             JornadaModels obj4 = new JornadaModels(contadori, str4);
                             jor1.add(obj4);
                         }
-
+                        i = 0;
+                        listaTareasFor = listaTareasFor1;
                         break;
                     case 3:
                         int contadorFor3 = 0;
@@ -184,9 +178,7 @@ public class TareasController {
                                 str5.add(listaTareasFor1.get(d).getTask_id());
                                 contadorFor3 = contadorFor3 + listaTareasFor1.get(d).getDuration();
                                 listaTareasFor1.remove(d);
-                                d = 0;
-                                i = 0;
-                                listaTareasFor = listaTareasFor1;
+
                             }
                         }
                         if (str5.size() > 0) {
@@ -194,7 +186,8 @@ public class TareasController {
                             JornadaModels obj5 = new JornadaModels(contadori, str5);
                             jor1.add(obj5);
                         }
-
+                        i = 0;
+                        listaTareasFor = listaTareasFor1;
                         break;
                     case 2:
                         int contadorFor2 = 0;
@@ -205,9 +198,7 @@ public class TareasController {
                                 str6.add(listaTareasFor1.get(f).getTask_id());
                                 contadorFor2 = contadorFor2 + listaTareasFor1.get(f).getDuration();
                                 listaTareasFor1.remove(f);
-                                f = 0;
-                                i = 0;
-                                listaTareasFor = listaTareasFor1;
+
                             }
                         }
                         if (str6.size() > 0) {
@@ -215,7 +206,8 @@ public class TareasController {
                             JornadaModels obj6 = new JornadaModels(contadori, str6);
                             jor1.add(obj6);
                         }
-
+                        i = 0;
+                        listaTareasFor = listaTareasFor1;
                         break;
                     case 1:
                         int contadorFor1 = 0;
@@ -226,8 +218,7 @@ public class TareasController {
                                 str7.add(listaTareasFor1.get(g).getTask_id());
                                 contadorFor1 = contadorFor1 + listaTareasFor1.get(g).getDuration();
                                 listaTareasFor1.remove(g);
-                                g = 0;
-                                listaTareasFor = listaTareasFor1;
+
                             }
                         }
                         if (str7.size() > 0) {
@@ -237,7 +228,7 @@ public class TareasController {
                         }
 
                         i = 0;
-
+                        listaTareasFor = listaTareasFor1;
                         break;
                 }
             }
