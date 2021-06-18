@@ -1,5 +1,0 @@
-cl\java\springboot\models\JornadaModels.class
-cl\java\springboot\models\TareasModels.class
-cl\java\springboot\entities\Tareas.class
-cl\java\springboot\rest\TareasController.class
-cl\java\springboot\run\TareasServiceApplication.class

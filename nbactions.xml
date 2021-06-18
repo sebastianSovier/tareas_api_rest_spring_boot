@@ -23,12 +23,7 @@
                 <goal>spring-boot:run</goal>
             </goals>
             <properties>
-                <run.jvmArguments>-Xdebug -Xrunjdwp:transport=dt_socket,server=n,address=${jpda.address}</run.jvmArguments>
-                
-                
-                
-                
-                
+                <run.jvmArguments>-Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=y,address=5005</run.jvmArguments>
                 <jpda.listen>true</jpda.listen>
             </properties>
         </action>
