@@ -221,7 +221,7 @@ public class TareasBo {
         }
         if (jor1.size() > 0) {
             tareasModelss.setJornadas(jor1);
-            int DiasTrabajados = tareasModelss.getJornadas().size();
+            int DiasTrabajados = tareasModelss.getJornadas().size() - 1;
             tareasModelss.setDias_trabajo(DiasTrabajados);
         }
 
