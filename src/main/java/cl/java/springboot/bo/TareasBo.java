@@ -56,9 +56,6 @@ public class TareasBo {
 
         int contadori = 0;
         for (int i = 0; i < listaTareasFor.size();) {
-            if (listaTareasFor.isEmpty()) {
-                break;
-            }
             switch (listaTareasFor.get(i).getDuration()) {
                 case 8:
                     ArrayList<String> str = new ArrayList<>();
